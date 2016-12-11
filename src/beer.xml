@@ -1,0 +1,31 @@
+<beer name="Bud"
+      type="light"
+      isAlcoholic="true"
+      manufacturer="Anheuser-Busch">
+
+    <ingredients>
+        <ingredient>water</ingredient>
+        <ingredient>sugar</ingredient>
+        <ingredient>hop</ingredient>
+    </ingredients>
+
+    <characteristics
+            isFiltered="false"
+            alcPercentage="4.1"
+            caloroficValue="666"
+            transparency="15%">
+
+        <bottling>
+            <container>
+                <material>wood</material>
+                <capacity>5</capacity>
+            </container>
+
+            <container>
+                <material>glass</material>
+                <capacity>0.5</capacity>
+            </container>
+        </bottling>
+
+    </characteristics>
+</beer>
