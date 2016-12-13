@@ -1,4 +1,4 @@
-package parsers;
+package parsers.models;
 
 
 import java.util.ArrayList;
@@ -62,5 +62,14 @@ public class CharacteristicsModel {
 
     public void addContainer(ContainerModel container) {
         containers.add(container);
+    }
+
+    @Override
+    public String toString() {
+        return isFiltered + " " +
+                alcPercentage + " " +
+                calorificValue + " " +
+                transparency + "\n" +
+                containers;
     }
 }

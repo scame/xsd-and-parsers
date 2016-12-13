@@ -1,4 +1,4 @@
-package parsers;
+package parsers.models;
 
 
 public class ContainerModel {
@@ -21,5 +21,10 @@ public class ContainerModel {
 
     public double getCapacity() {
         return capacity;
+    }
+
+    @Override
+    public String toString() {
+        return material + " " + capacity;
     }
 }

@@ -1,4 +1,4 @@
-package parsers;
+package parsers.models;
 
 
 import java.util.ArrayList;
@@ -82,5 +82,16 @@ public class BeerModel {
 
     public CharacteristicsModel getCharacteristics() {
         return characteristics;
+    }
+
+    @Override
+    public String toString() {
+        return name + " " +
+                type + " " +
+                isAlcoholic + " " +
+                manufacturer + " " +
+                id + "\n" +
+                ingredients + "\n"
+                + characteristics;
     }
 }

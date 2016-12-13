@@ -1,4 +1,4 @@
-package parsers;
+package parsers.models;
 
 
 import java.util.ArrayList;

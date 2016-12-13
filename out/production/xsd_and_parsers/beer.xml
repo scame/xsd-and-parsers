@@ -13,11 +13,11 @@
         <ingredient>hop</ingredient>
     </ingredients>
 
-    <characteristics
-            isFiltered="false"
-            alcPercentage="4.1"
-            caloroficValue="666"
-            transparency="15%">
+    <characteristics>
+        <isFiltered>false</isFiltered>
+        <alcPercentage>4.1</alcPercentage>
+        <caloroficValue>666kal</caloroficValue>
+        <transparency>15%</transparency>
 
         <bottling>
             <container>
