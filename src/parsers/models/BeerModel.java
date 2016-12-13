@@ -22,6 +22,7 @@ public class BeerModel {
 
     public BeerModel() {
         ingredients = new ArrayList<>();
+        characteristics = new CharacteristicsModel();
     }
 
     public void addIngredient(String ingredient) {
