@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" elementFormDefault="qualified"
+           targetNamespace="http://scame.com/" xmlns:app="http://scame.com/">
+    <xs:element name="beers">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element minOccurs="1" maxOccurs="unbounded" name="beer" form="unqualified">
+                    <xs:complexType>
+                        <xs:sequence>
+                            <xs:element name="ingredients" form="unqualified">
+                                <xs:complexType>
+                                    <xs:sequence>
+                                        <xs:element minOccurs="2" maxOccurs="unbounded" name="ingredient" form="unqualified" type="xs:NCName"/>
+                                    </xs:sequence>
+                                </xs:complexType>
+                            </xs:element>
+                            <xs:element name="characteristics" form="unqualified">
+                                <xs:complexType>
+                                    <xs:sequence>
+                                        <xs:element name="isFiltered" form="unqualified" type="xs:boolean"/>
+                                        <xs:element name="alcPercentage" form="unqualified" type="xs:decimal"/>
+                                        <xs:element name="caloroficValue" form="unqualified" type="xs:NMTOKEN"/>
+                                        <xs:element name="transparency" form="unqualified" type="xs:string"/>
+                                        <xs:element name="bottling" form="unqualified">
+                                            <xs:complexType>
+                                                <xs:sequence>
+                                                    <xs:element minOccurs="1" maxOccurs="unbounded" name="container"
+                                                                form="unqualified">
+                                                        <xs:complexType>
+                                                            <xs:sequence>
+                                                                <xs:element name="material" form="unqualified"
+                                                                            type="xs:NCName"/>
+                                                                <xs:element name="capacity" form="unqualified"
+                                                                            type="xs:decimal"/>
+                                                            </xs:sequence>
+                                                        </xs:complexType>
+                                                    </xs:element>
+                                                </xs:sequence>
+                                            </xs:complexType>
+                                        </xs:element>
+                                    </xs:sequence>
+                                </xs:complexType>
+                            </xs:element>
+                        </xs:sequence>
+                        <xs:attribute name="id" use="required" type="xs:integer"/>
+                        <xs:attribute name="isAlcoholic" use="required" type="xs:boolean"/>
+                        <xs:attribute name="manufacturer" use="required"/>
+                        <xs:attribute name="name" use="required" type="xs:NCName"/>
+                        <xs:attribute name="type" use="required">
+                            <xs:simpleType>
+                                <xs:restriction base="xs:string">
+                                    <xs:enumeration value="dark"/>
+                                    <xs:enumeration value="light"/>
+                                    <xs:enumeration value="live"/>
+                                    <xs:enumeration value="lager"/>
+                                </xs:restriction>
+                            </xs:simpleType>
+                        </xs:attribute>
+                    </xs:complexType>
+                </xs:element>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+</xs:schema>
