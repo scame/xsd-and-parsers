@@ -15,11 +15,14 @@ import javax.xml.stream.events.StartElement;
 import javax.xml.stream.events.XMLEvent;
 import java.io.FileNotFoundException;
 import java.io.FileReader;
+import java.util.ArrayList;
 import java.util.List;
 
 public class StaxParser {
 
-    private final BeerModel beerModel = new BeerModel();
+    private final List<BeerModel> beers = new ArrayList<>();
+
+    private BeerModel beerModel;
 
     private boolean bIngredient;
 
@@ -53,7 +56,8 @@ public class StaxParser {
                 handleCharactersEvent(event);
                 break;
             case XMLStreamConstants.END_DOCUMENT:
-                System.out.println(beerModel);
+                beers.sort(new BeerComparator());
+                beers.forEach(System.out::println);
         }
     }
 
@@ -93,6 +97,8 @@ public class StaxParser {
         String qName = startElement.getName().getLocalPart();
 
         if (qName.equalsIgnoreCase("beer")) {
+            beerModel = new BeerModel();
+            beers.add(beerModel);
             parseBeerAttrs(startElement);
         } else if (qName.equalsIgnoreCase("ingredient")) {
             bIngredient = true;

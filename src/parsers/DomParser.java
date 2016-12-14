@@ -19,14 +19,23 @@ import java.util.List;
 
 public class DomParser {
 
-    private final BeerModel beerModel = new BeerModel();
+    private final List<BeerModel> beers = new ArrayList<>();
+
+    private BeerModel beerModel;
 
     public void parse() {
         Element rootElement = getRoot();
-        parseRootAttrs(rootElement);
-        parseIngredients(rootElement);
-        parseCharacteristics(rootElement);
-        System.out.println(beerModel);
+        NodeList beerNodes = rootElement.getElementsByTagName("beer");
+
+        for (int i = 0; i < beerNodes.getLength(); i++) {
+            beerModel = new BeerModel();
+            beers.add(beerModel);
+
+            Element beerElement = (Element) beerNodes.item(i);
+            parseRootAttrs(beerElement);
+            parseIngredients(beerElement);
+            parseCharacteristics(beerElement);
+        }
     }
 
     private void parseCharacteristics(Element rootElement) {
@@ -92,10 +101,18 @@ public class DomParser {
 
 
     public static void main(String[] args) {
-        new DomParser().parse();
+        DomParser domParser = new DomParser();
+        domParser.parse();
+        domParser.print();
     }
 
-    public Element getRoot() {
+    private Element getRoot() {
+        Document doc = getDocument();
+        doc.getDocumentElement().normalize();
+        return doc.getDocumentElement();
+    }
+
+    private Document getDocument() {
         File inputFile = new File("src/beer.xml");
         DocumentBuilderFactory dbFactory = DocumentBuilderFactory.newInstance();
         DocumentBuilder dBuilder;
@@ -106,7 +123,11 @@ public class DomParser {
         } catch (ParserConfigurationException | SAXException | IOException e) {
             e.printStackTrace();
         }
-        doc.getDocumentElement().normalize();
-        return doc.getDocumentElement();
+        return doc;
+    }
+
+    public void print() {
+        beers.sort(new BeerComparator());
+        beers.forEach(System.out::println);
     }
 }

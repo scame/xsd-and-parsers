@@ -7,11 +7,14 @@ import org.xml.sax.helpers.DefaultHandler;
 import parsers.models.BeerModel;
 import parsers.models.ContainerModel;
 
+import java.util.ArrayList;
 import java.util.List;
 
 public class BeerHandler extends DefaultHandler {
 
-    private final BeerModel beerModel = new BeerModel();
+    private final List<BeerModel> beers = new ArrayList<>();
+
+    private BeerModel beerModel;
 
     private boolean bIngredient;
 
@@ -31,7 +34,10 @@ public class BeerHandler extends DefaultHandler {
     public void startElement(String uri, String localName, String qName, Attributes attributes) throws SAXException {
         super.startElement(uri, localName, qName, attributes);
 
-        if (qName.equals("app:beer")) {
+        if (qName.equals("beer")) {
+            beerModel = new BeerModel();
+            beers.add(beerModel);
+
             beerModel.setManufacturer(attributes.getValue("manufacturer"));
             beerModel.setAlcoholic(Boolean.valueOf(attributes.getValue("isAlcoholic")));
             beerModel.setType(attributes.getValue("type"));
@@ -90,6 +96,7 @@ public class BeerHandler extends DefaultHandler {
     @Override
     public void endDocument() throws SAXException {
         super.endDocument();
-        System.out.println(beerModel);
+        beers.sort(new BeerComparator());
+        beers.forEach(System.out::println);
     }
 }
