@@ -5,7 +5,7 @@ import javax.xml.parsers.SAXParser;
 import javax.xml.parsers.SAXParserFactory;
 import java.io.File;
 
-public class SAXparser {
+public class SaxParser {
 
     public static void main(String[] args) {
         try {

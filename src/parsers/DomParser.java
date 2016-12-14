@@ -17,7 +17,7 @@ import java.io.IOException;
 import java.util.ArrayList;
 import java.util.List;
 
-public class DOMparser {
+public class DomParser {
 
     private final BeerModel beerModel = new BeerModel();
 
@@ -92,7 +92,7 @@ public class DOMparser {
 
 
     public static void main(String[] args) {
-        new DOMparser().parse();
+        new DomParser().parse();
     }
 
     public Element getRoot() {
