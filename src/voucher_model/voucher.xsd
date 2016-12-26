@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="vouchers" targetNamespace="http://scd.com/" xmlns:mstns="http://scd.com/" xmlns="http://scd.com/" xmlns:xs="http://www.w3.org/2001/XMLSchema"
+           attributeFormDefault="qualified" elementFormDefault="qualified">
+    <xs:element name="vouchers" >
+        <xs:complexType>
+            <xs:choice minOccurs="0" maxOccurs="unbounded">
+                <xs:element name="voucher" form="unqualified">
+                    <xs:complexType>
+                        <xs:sequence>
+                            <xs:element name="hotel_chars" form="unqualified" minOccurs="0" maxOccurs="unbounded">
+                                <xs:complexType>
+                                    <xs:sequence>
+                                        <xs:element name="stars" form="unqualified" maxOccurs="1">
+                                            <xs:simpleType>
+                                                <xs:restriction base="xs:integer">
+                                                    <xs:minInclusive value="1"/>
+                                                    <xs:maxInclusive value="5"/>
+                                                </xs:restriction>
+                                            </xs:simpleType>
+                                        </xs:element>
+                                        <xs:element name="food" form="unqualified" type="xs:string" minOccurs="1" />
+                                        <xs:element name="room" form="unqualified" minOccurs="1">
+                                            <xs:simpleType>
+                                                <xs:restriction base="xs:integer">
+                                                    <xs:minInclusive value="1"/>
+                                                    <xs:maxInclusive value="3"/>
+                                                </xs:restriction>
+                                            </xs:simpleType>
+                                        </xs:element>
+                                        <xs:element name="isTV" form="unqualified" type="xs:boolean" minOccurs="1" />
+                                        <xs:element name="isAirConditioning" form="unqualified" type="xs:boolean" minOccurs="1" />
+                                    </xs:sequence>
+                                </xs:complexType>
+                            </xs:element>
+                            <xs:element name="cost" form="unqualified" minOccurs="0" maxOccurs="unbounded">
+                                <xs:complexType>
+                                    <xs:sequence>
+                                        <xs:element name="girls" form="unqualified" type="xs:integer" minOccurs="0" />
+                                        <xs:element name="food" form="unqualified" type="xs:integer" minOccurs="0" />
+                                        <xs:element name="drink" form="unqualified" type="xs:integer" minOccurs="0"  />
+                                    </xs:sequence>
+                                    <xs:attribute name="price" form="unqualified" type="xs:integer" />
+                                </xs:complexType>
+                            </xs:element>
+                        </xs:sequence>
+                        <xs:attribute name="type" form="unqualified">
+                            <xs:simpleType>
+                                <xs:restriction base="xs:string">
+                                    <xs:enumeration value="weekend"/>
+                                    <xs:enumeration value="excursion"/>
+                                    <xs:enumeration value="pilgrimage"/>
+                                </xs:restriction>
+                            </xs:simpleType>
+                        </xs:attribute>
+                        <xs:attribute name="country" form="unqualified" type="xs:string" />
+                        <xs:attribute name="number_day_nights" form="unqualified" type="xs:string" />
+                        <xs:attribute name="transport" form="unqualified">
+                            <xs:simpleType>
+                                <xs:restriction base="xs:string">
+                                    <xs:enumeration value="car"/>
+                                    <xs:enumeration value="air"/>
+                                    <xs:enumeration value="water"/>
+                                </xs:restriction>
+                            </xs:simpleType>
+                        </xs:attribute>
+                    </xs:complexType>
+                </xs:element>
+            </xs:choice>
+        </xs:complexType>
+    </xs:element>
+</xs:schema>
