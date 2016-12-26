@@ -1,5 +1,5 @@
 
-package jaxb;
+package beer_model.jaxb;
 
 import java.math.BigDecimal;
 import java.math.BigInteger;

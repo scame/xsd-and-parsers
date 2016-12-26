@@ -1,4 +1,4 @@
-package parsers.models;
+package beer_model.models;
 
 
 public class ContainerModel {

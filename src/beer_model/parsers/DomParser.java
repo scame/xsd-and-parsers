@@ -1,13 +1,14 @@
-package parsers;
+package beer_model.parsers;
 
 
+import beer_model.BeerComparator;
 import org.w3c.dom.Document;
 import org.w3c.dom.Element;
 import org.w3c.dom.NodeList;
 import org.xml.sax.SAXException;
-import parsers.models.BeerModel;
-import parsers.models.CharacteristicsModel;
-import parsers.models.ContainerModel;
+import beer_model.models.BeerModel;
+import beer_model.models.CharacteristicsModel;
+import beer_model.models.ContainerModel;
 
 import javax.xml.parsers.DocumentBuilder;
 import javax.xml.parsers.DocumentBuilderFactory;

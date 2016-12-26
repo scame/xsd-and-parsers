@@ -1,4 +1,4 @@
-package parsers;
+package beer_model.parsers;
 
 
 import javax.xml.parsers.SAXParser;

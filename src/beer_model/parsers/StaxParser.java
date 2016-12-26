@@ -1,8 +1,9 @@
-package parsers;
+package beer_model.parsers;
 
 
-import parsers.models.BeerModel;
-import parsers.models.ContainerModel;
+import beer_model.BeerComparator;
+import beer_model.models.BeerModel;
+import beer_model.models.ContainerModel;
 
 import javax.xml.namespace.QName;
 import javax.xml.stream.XMLEventReader;

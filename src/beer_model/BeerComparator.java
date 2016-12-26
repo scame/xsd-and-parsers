@@ -1,7 +1,7 @@
-package parsers;
+package beer_model;
 
 
-import parsers.models.BeerModel;
+import beer_model.models.BeerModel;
 
 import java.util.Comparator;
 

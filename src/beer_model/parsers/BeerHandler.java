@@ -1,11 +1,12 @@
-package parsers;
+package beer_model.parsers;
 
 
+import beer_model.BeerComparator;
 import org.xml.sax.Attributes;
 import org.xml.sax.SAXException;
 import org.xml.sax.helpers.DefaultHandler;
-import parsers.models.BeerModel;
-import parsers.models.ContainerModel;
+import beer_model.models.BeerModel;
+import beer_model.models.ContainerModel;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -29,6 +30,7 @@ public class BeerHandler extends DefaultHandler {
     private boolean bMaterial;
 
     private boolean bCapacity;
+
 
     @Override
     public void startElement(String uri, String localName, String qName, Attributes attributes) throws SAXException {

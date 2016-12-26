@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<space:vouchers xmlns:space="http://scd.com/" >
+    <voucher type="pilgrimage"
+             country="Ukraine"
+             number_day_nights="12/11"
+             transport="car">
+
+        <hotel_chars>
+            <stars>4</stars>
+            <food>BB</food>
+            <room>3</room>
+            <isTV>true</isTV>
+            <isAirConditioning>false</isAirConditioning>
+        </hotel_chars>
+
+        <cost price="666">
+            <girls>3</girls>
+            <food>5</food>
+            <drink>20</drink>
+        </cost>
+
+    </voucher>
+
+    <voucher type="excursion"
+             country="Ukraine"
+             number_day_nights="12/11"
+             transport="car">
+
+        <hotel_chars>
+            <stars>5</stars>
+            <food>HB</food>
+            <room>2</room>
+            <isTV>true</isTV>
+            <isAirConditioning>true</isAirConditioning>
+        </hotel_chars>
+
+        <cost price="555">
+            <girls>6</girls>
+            <food>5</food>
+            <drink>20</drink>
+        </cost>
+
+    </voucher>
+
+</space:vouchers>

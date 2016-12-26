@@ -1,5 +1,5 @@
 
-package jaxb;
+package beer_model.jaxb;
 
 import javax.xml.bind.annotation.XmlRegistry;
 
