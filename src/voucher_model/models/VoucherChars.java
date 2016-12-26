@@ -52,4 +52,9 @@ public class VoucherChars {
     public void setAirConditioning(boolean airConditioning) {
         isAirConditioning = airConditioning;
     }
+
+    @Override
+    public String toString() {
+        return stars + " " + food + " " + " " + room + " " + isTv + " " + isAirConditioning;
+    }
 }

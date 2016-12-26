@@ -42,4 +42,9 @@ public class VoucherCosts {
     public int getDrink() {
         return drink;
     }
+
+    @Override
+    public String toString() {
+        return price + " " + girls + " " + food + " " + drink;
+    }
 }

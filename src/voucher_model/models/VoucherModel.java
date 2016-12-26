@@ -62,4 +62,10 @@ public class VoucherModel {
     public VoucherCosts getVoucherCosts() {
         return voucherCosts;
     }
+
+    @Override
+    public String toString() {
+        return type + " " + country + " " + numberDayAndNights + " " + transport + " " +
+                " " + voucherChars + " " + voucherCosts;
+    }
 }
