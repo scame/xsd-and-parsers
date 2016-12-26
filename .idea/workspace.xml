@@ -2,26 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="7abbfa41-4308-478d-b225-6a9c9dd62a7d" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/beer_model/beer.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/voucher_model/voucher.xml" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/beer.xml" afterPath="" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/jaxb/Beer.java" afterPath="$PROJECT_DIR$/src/beer_model/jaxb/Beer.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/jaxb/ObjectFactory.java" afterPath="$PROJECT_DIR$/src/beer_model/jaxb/ObjectFactory.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/jaxb/beer.xsd" afterPath="$PROJECT_DIR$/src/beer_model/jaxb/beer.xsd" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/newschema.xsd" afterPath="$PROJECT_DIR$/src/beer_model/newschema.xsd" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/parsers/BeerComparator.java" afterPath="$PROJECT_DIR$/src/beer_model/BeerComparator.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/parsers/BeerHandler.java" afterPath="$PROJECT_DIR$/src/beer_model/parsers/BeerHandler.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/parsers/DomParser.java" afterPath="$PROJECT_DIR$/src/beer_model/parsers/DomParser.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/parsers/SaxParser.java" afterPath="$PROJECT_DIR$/src/beer_model/parsers/SaxParser.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/parsers/StaxParser.java" afterPath="$PROJECT_DIR$/src/beer_model/parsers/StaxParser.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/parsers/models/BeerModel.java" afterPath="$PROJECT_DIR$/src/beer_model/models/BeerModel.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/parsers/models/BottlingModel.java" afterPath="$PROJECT_DIR$/src/beer_model/models/BottlingModel.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/parsers/models/CharacteristicsModel.java" afterPath="$PROJECT_DIR$/src/beer_model/models/CharacteristicsModel.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/parsers/models/ContainerModel.java" afterPath="$PROJECT_DIR$/src/beer_model/models/ContainerModel.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/xsd_and_parsers/parsers/BeerHandler.class" afterPath="$PROJECT_DIR$/out/production/xsd_and_parsers/parsers/BeerHandler.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/xsd_and_parsers/parsers/DomParser.class" afterPath="$PROJECT_DIR$/out/production/xsd_and_parsers/parsers/DomParser.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/voucher_model/models/VoucherChars.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/voucher_model/models/VoucherCosts.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/voucher_model/models/VoucherModel.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/xsd_and_parsers/beer.xml" afterPath="$PROJECT_DIR$/out/production/xsd_and_parsers/beer.xml" />
     </list>
     <ignored path="xsd_and_parsers.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -43,26 +27,6 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="BeerHandler.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/beer_model/parsers/BeerHandler.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="80">
-              <caret line="13" column="13" selection-start-line="13" selection-start-column="13" selection-end-line="13" selection-end-column="13" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="StaxParser.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/beer_model/parsers/StaxParser.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="80">
-              <caret line="21" column="13" selection-start-line="21" selection-start-column="13" selection-end-line="21" selection-end-column="13" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="newschema.xsd" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/beer_model/newschema.xsd">
           <provider selected="true" editor-type-id="text-editor">
@@ -93,31 +57,86 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="voucher.xml" pinned="false" current-in-tab="true">
+      <file leaf-file-name="voucher.xml" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/voucher_model/voucher.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="80">
-              <caret line="5" column="26" selection-start-line="5" selection-start-column="26" selection-end-line="5" selection-end-column="26" />
+            <state relative-caret-position="192">
+              <caret line="12" column="56" selection-start-line="8" selection-start-column="12" selection-end-line="12" selection-end-column="56" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="DomParser.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/beer_model/parsers/DomParser.java">
+      <file leaf-file-name="BeerModel.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/beer_model/models/BeerModel.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="80">
-              <caret line="20" column="13" selection-start-line="20" selection-start-column="13" selection-end-line="20" selection-end-column="13" />
+            <state relative-caret-position="304">
+              <caret line="20" column="22" selection-start-line="20" selection-start-column="22" selection-end-line="20" selection-end-column="22" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="SaxParser.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/beer_model/parsers/SaxParser.java">
+      <file leaf-file-name="VoucherModel.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/voucher_model/models/VoucherModel.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="266">
+              <caret line="18" column="25" selection-start-line="18" selection-start-column="25" selection-end-line="18" selection-end-column="25" />
+              <folding>
+                <element signature="e#304#305#0" expanded="true" />
+                <element signature="e#336#337#0" expanded="true" />
+                <element signature="e#382#383#0" expanded="true" />
+                <element signature="e#420#421#0" expanded="true" />
+                <element signature="e#488#489#0" expanded="true" />
+                <element signature="e#548#549#0" expanded="true" />
+                <element signature="e#598#599#0" expanded="true" />
+                <element signature="e#640#641#0" expanded="true" />
+                <element signature="e#702#703#0" expanded="true" />
+                <element signature="e#750#751#0" expanded="true" />
+                <element signature="e#812#813#0" expanded="true" />
+                <element signature="e#860#861#0" expanded="true" />
+                <element signature="e#891#892#0" expanded="true" />
+                <element signature="e#918#919#0" expanded="true" />
+                <element signature="e#952#953#0" expanded="true" />
+                <element signature="e#982#983#0" expanded="true" />
+                <element signature="e#1027#1028#0" expanded="true" />
+                <element signature="e#1068#1069#0" expanded="true" />
+                <element signature="e#1104#1105#0" expanded="true" />
+                <element signature="e#1136#1137#0" expanded="true" />
+                <element signature="e#1181#1182#0" expanded="true" />
+                <element signature="e#1216#1217#0" expanded="true" />
+                <element signature="e#1261#1262#0" expanded="true" />
+                <element signature="e#1296#1297#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="VoucherCosts.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/voucher_model/models/VoucherCosts.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="80">
-              <caret line="7" column="13" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
+              <caret line="5" column="4" selection-start-line="5" selection-start-column="4" selection-end-line="5" selection-end-column="4" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="VoucherChars.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/voucher_model/models/VoucherChars.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="80">
+              <caret line="5" column="0" selection-start-line="5" selection-start-column="0" selection-end-line="5" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ContainerModel.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/beer_model/models/ContainerModel.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="96">
+              <caret line="6" column="0" selection-start-line="6" selection-start-column="0" selection-end-line="6" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -185,6 +204,9 @@
         <option value="$PROJECT_DIR$/src/parsers/DomParser.java" />
         <option value="$PROJECT_DIR$/src/voucher_model/voucher.xsd" />
         <option value="$PROJECT_DIR$/src/voucher_model/voucher.xml" />
+        <option value="$PROJECT_DIR$/src/voucher_model/models/CharsModel.java" />
+        <option value="$PROJECT_DIR$/src/voucher_model/models/VoucherModel.java" />
+        <option value="$PROJECT_DIR$/src/voucher_model/models/VoucherCosts.java" />
       </list>
     </option>
   </component>
@@ -408,7 +430,51 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
+              <option name="myItemId" value="voucher_model" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="models" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="xsd_and_parsers" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="xsd_and_parsers" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
               <option name="myItemId" value="beer_model" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="xsd_and_parsers" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="xsd_and_parsers" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="beer_model" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="models" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -426,6 +492,7 @@
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/voucher_model" />
       <recent name="$PROJECT_DIR$/src/beer_model" />
     </key>
   </component>
@@ -959,16 +1026,16 @@
       <workItem from="1482084713315" duration="1747000" />
       <workItem from="1482140468356" duration="27000" />
       <workItem from="1482146626928" duration="1671000" />
-      <workItem from="1482708801316" duration="3684000" />
+      <workItem from="1482708801316" duration="4075000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="66764000" />
+    <option name="totallyTimeSpent" value="67155000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="30" y="0" width="1336" height="768" extended-state="6" />
-    <editor active="false" />
+    <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -979,7 +1046,7 @@
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.49453977" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.36193448" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.36193448" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2496124" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
@@ -1113,26 +1180,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/beer_model/models/BeerModel.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="304">
-          <caret line="20" column="22" selection-start-line="20" selection-start-column="22" selection-end-line="20" selection-end-column="22" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/beer_model/models/CharacteristicsModel.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="240">
           <caret line="16" column="26" selection-start-line="16" selection-start-column="26" selection-end-line="16" selection-end-column="26" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/beer_model/models/ContainerModel.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="96">
-          <caret line="6" column="0" selection-start-line="6" selection-start-column="0" selection-end-line="6" selection-end-column="0" />
           <folding />
         </state>
       </provider>
@@ -1209,10 +1260,75 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/voucher_model/voucher.xml">
+    <entry file="file://$PROJECT_DIR$/src/beer_model/models/ContainerModel.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="96">
+          <caret line="6" column="0" selection-start-line="6" selection-start-column="0" selection-end-line="6" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/beer_model/models/BeerModel.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="304">
+          <caret line="20" column="22" selection-start-line="20" selection-start-column="22" selection-end-line="20" selection-end-column="22" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/voucher_model/models/VoucherChars.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="80">
-          <caret line="5" column="26" selection-start-line="5" selection-start-column="26" selection-end-line="5" selection-end-column="26" />
+          <caret line="5" column="0" selection-start-line="5" selection-start-column="0" selection-end-line="5" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/voucher_model/voucher.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="192">
+          <caret line="12" column="56" selection-start-line="8" selection-start-column="12" selection-end-line="12" selection-end-column="56" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/voucher_model/models/VoucherModel.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="266">
+          <caret line="18" column="25" selection-start-line="18" selection-start-column="25" selection-end-line="18" selection-end-column="25" />
+          <folding>
+            <element signature="e#304#305#0" expanded="true" />
+            <element signature="e#336#337#0" expanded="true" />
+            <element signature="e#382#383#0" expanded="true" />
+            <element signature="e#420#421#0" expanded="true" />
+            <element signature="e#488#489#0" expanded="true" />
+            <element signature="e#548#549#0" expanded="true" />
+            <element signature="e#598#599#0" expanded="true" />
+            <element signature="e#640#641#0" expanded="true" />
+            <element signature="e#702#703#0" expanded="true" />
+            <element signature="e#750#751#0" expanded="true" />
+            <element signature="e#812#813#0" expanded="true" />
+            <element signature="e#860#861#0" expanded="true" />
+            <element signature="e#891#892#0" expanded="true" />
+            <element signature="e#918#919#0" expanded="true" />
+            <element signature="e#952#953#0" expanded="true" />
+            <element signature="e#982#983#0" expanded="true" />
+            <element signature="e#1027#1028#0" expanded="true" />
+            <element signature="e#1068#1069#0" expanded="true" />
+            <element signature="e#1104#1105#0" expanded="true" />
+            <element signature="e#1136#1137#0" expanded="true" />
+            <element signature="e#1181#1182#0" expanded="true" />
+            <element signature="e#1216#1217#0" expanded="true" />
+            <element signature="e#1261#1262#0" expanded="true" />
+            <element signature="e#1296#1297#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/voucher_model/models/VoucherCosts.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="80">
+          <caret line="5" column="4" selection-start-line="5" selection-start-column="4" selection-end-line="5" selection-end-column="4" />
           <folding />
         </state>
       </provider>
